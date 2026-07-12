@@ -1,6 +1,6 @@
 async function loadRiders() {
 
-    let riders = await loadCSV("points_par_etape.csv");
+    let riders = await loadCSV("riders.csv");
 
     if (riders.length === 0) return;
 
