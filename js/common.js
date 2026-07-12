@@ -100,7 +100,7 @@ async function updateDashboard(){
 
     try{
 
-        const riders = await loadCSV("points_par_etape.csv");
+        const riders = await loadCSV("riders.csv");
 
         document.getElementById("nbRiders").innerHTML =
             riders.length;
@@ -138,7 +138,9 @@ async function updateDashboard(){
 
 async function loadBestTeam(){
 
-    return await loadCSV("bestTeam.csv");
+    const riders = await loadCSV("riders.csv");
+
+    return riders.filter(r => Number(r.selected) === 1);
 
 }
 
@@ -264,8 +266,7 @@ async function drawScoreChart(){
 
 async function drawTopChart(){
 
-    let riders =
-        await loadCSV("points_par_etape.csv");
+    let riders = await loadCSV("riders.csv");
 
     riders.forEach(r=>{
 

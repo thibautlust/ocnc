@@ -4,7 +4,7 @@
 
 async function loadStats() {
 
-    const riders = await loadCSV("points_par_etape.csv");
+    const riders = await loadCSV("riders.csv");
 
     if (riders.length === 0)
         return;
@@ -15,7 +15,6 @@ async function loadStats() {
 
 window.addEventListener("load", loadStats);
 
-window.addEventListener("load", loadStats);
 
 
 // =======================================================
