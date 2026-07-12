@@ -31,7 +31,7 @@ function drawTopChart(riders){
 
     riders.sort((a,b)=>Number(b.points)-Number(a.points));
 
-    const top = riders.slice(0,10);
+    const top = riders.slice(0,50);
 
     new Chart(document.getElementById("topPointsChart"),{
 
@@ -82,7 +82,7 @@ function drawRatioChart(riders){
 
     riders.sort((a,b)=>b.ratio-a.ratio);
 
-    const top=riders.slice(0,10);
+    const top=riders.slice(0,50);
 
     new Chart(document.getElementById("ratioChart"),{
 
