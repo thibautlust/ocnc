@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Statistiques</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+🚴 Tour Fantasy Optimizer
+</a>
+
+<div class="collapse navbar-collapse">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Accueil</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="riders.html">Coureurs</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="team.html">Equipe optimale</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="stats.html">Statistiques</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+<div class="container mt-4">
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<div class="card">
+
+<div class="card-header">
+
+Top 10 des coureurs
+
+</div>
+
+<div class="card-body">
+
+<canvas id="topPointsChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="card">
+
+<div class="card-header">
+
+Meilleur rapport Points / Prix
+
+</div>
+
+<div class="card-body">
+
+<canvas id="ratioChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row mt-4">
+
+<div class="col-lg-6">
+
+<div class="card">
+
+<div class="card-header">
+
+Répartition des points de l'équipe optimale
+
+</div>
+
+<div class="card-body">
+
+<canvas id="teamPieChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="card">
+
+<div class="card-header">
+
+Evolution du score optimal
+
+</div>
+
+<div class="card-body">
+
+<canvas id="historyChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+
+<script src="js/common.js"></script>
+<script src="js/stats.js"></script>
+
+</body>
+
+</html>

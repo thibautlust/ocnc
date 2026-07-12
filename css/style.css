@@ -1,0 +1,385 @@
+/* ===========================
+   GENERAL
+=========================== */
+
+body {
+    background: #f4f5f7;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card {
+
+    border: none;
+
+    border-radius: 12px;
+
+    margin-bottom:20px;
+
+    transition:0.2s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.card-header{
+
+    background:#0d6efd;
+
+    color:white;
+
+    font-weight:bold;
+
+    border-radius:12px 12px 0 0 !important;
+
+}
+
+.card-body{
+
+    background:white;
+
+}
+
+
+/* ===========================
+   STATISTICS
+=========================== */
+
+.card h2{
+
+    font-size:2.4rem;
+
+    font-weight:bold;
+
+    color:#0d6efd;
+
+}
+
+
+/* ===========================
+   TABLES
+=========================== */
+
+table.dataTable tbody tr:hover{
+
+    background:#eef5ff;
+
+}
+
+table{
+
+    width:100%;
+
+}
+
+thead{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+thead th{
+
+    white-space:nowrap;
+
+}
+
+tbody td{
+
+    vertical-align:middle;
+
+}
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+
+/* ===========================
+   TOP RIDERS
+=========================== */
+
+.gold{
+
+    background:#ffe082 !important;
+
+}
+
+.silver{
+
+    background:#eeeeee !important;
+
+}
+
+.bronze{
+
+    background:#ffd8a8 !important;
+
+}
+
+
+/* ===========================
+   RIDER NAME
+=========================== */
+
+.rider{
+
+    font-weight:600;
+
+}
+
+.team{
+
+    color:#666;
+
+}
+
+
+/* ===========================
+   CHARTS
+=========================== */
+
+canvas{
+
+    max-height:400px;
+
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:50px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:#888;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary{
+
+    border-radius:8px;
+
+}
+
+.btn-success{
+
+    border-radius:8px;
+
+}
+
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge{
+
+    font-size:0.9rem;
+
+}
+
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:992px){
+
+.card h2{
+
+font-size:1.8rem;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.navbar-brand{
+
+font-size:1.1rem;
+
+}
+
+.card{
+
+margin-bottom:15px;
+
+}
+
+canvas{
+
+max-height:250px;
+
+}
+
+}
+
+
+/* ===========================
+   LOADING
+=========================== */
+
+.loading{
+
+    text-align:center;
+
+    font-size:1.3rem;
+
+    padding:40px;
+
+}
+
+
+/* ===========================
+   SCORE COLORS
+=========================== */
+
+.score-high{
+
+    color:#198754;
+
+    font-weight:bold;
+
+}
+
+.score-medium{
+
+    color:#fd7e14;
+
+    font-weight:bold;
+
+}
+
+.score-low{
+
+    color:#dc3545;
+
+    font-weight:bold;
+
+}
+
+
+/* ===========================
+   BEST TEAM TABLE
+=========================== */
+
+.best-team tr{
+
+    font-size:1.05rem;
+
+}
+
+.best-team td:first-child{
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+   SEARCH BOX
+=========================== */
+
+.dataTables_filter input{
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    padding:5px 10px;
+
+}
+
+.dataTables_length select{
+
+    border-radius:6px;
+
+}
+
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+.fade-in{
+
+    animation:fade 0.5s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(8px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
