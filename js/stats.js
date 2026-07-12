@@ -45,7 +45,10 @@ function drawTopChart(riders){
 
                 label:"Points",
 
-                data:top.map(r=>Number(r.points))
+                data:top.map(r=>Number(r.points)),
+
+                categoryPercentage: 1.0,
+                barPercentage: 0.95
 
             }]
 
@@ -93,12 +96,15 @@ function drawRatioChart(riders){
         data:{
 
             labels:top.map(r=>r.Rider),
-
+            
             datasets:[{
 
                 label:"Points / Prix",
 
-                data:top.map(r=>r.ratio.toFixed(2))
+                data:top.map(r=>r.ratio.toFixed(2)),
+
+                categoryPercentage: 1.0,
+                barPercentage: 0.95
 
             }]
 
